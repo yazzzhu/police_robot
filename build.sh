@@ -5,5 +5,5 @@ set -o errexit
 pip install --upgrade pip
 pip install -r requirements.txt
 
-python ./RobotProject/manage.py collectstatic --no-input
-python ./RobotProject/manage.py migrate
+python manage.py collectstatic --no-input
+python manage.py migrate
