@@ -1,8 +1,8 @@
-#from django.urls import path
-from django.conf.urls import url
+from django.urls import path
+#from django.conf.urls import url
 from . import views
  
 urlpatterns = [
-    #path('callback', views.callback),
-    url('callback/', views.callback),
+    path('callback', views.callback),
+    #url('callback/', views.callback),
 ]
