@@ -2,7 +2,9 @@
 
  - [建置LINE Developers/GitHub/Django專案](#建置LINE_Developers/GitHub/Django專案)
  - [資料庫遷移初始化及建立管理者帳號](#資料庫遷移初始化及建立管理者帳號)
+ - [開發LINE Bot應用程式](#開發LINE_Bot應用程式，以views.py為預設主要判斷程式)
  - [Deploy a Django App on Render](#Deploy_a_Django_App_on_Render)
+ - [Git 教學和 GitHub 設定指引](#)
 
 ## 建置LINE_Developers/GitHub/Django專案
 
@@ -176,7 +178,9 @@ cd 到要建立專案的資料夾下
 
     python manage.py createsuperuser
 
-## 開發LINE Bot應用程式，以views.py為預設主要判斷程式
+<br>
+
+## 開發LINE_Bot應用程式，以views.py為預設主要判斷程式
 
 編輯app應用程式資料夾下的views.py檔案
 
@@ -236,7 +240,82 @@ cd 到要建立專案的資料夾下
 
 **將檔案上傳至github上面**
 
-[(下載git詳見「Git 教學和 GitHub 設定指引」)](#Deploy a Django App on Render)
+[(下載git詳見「Git 教學和 GitHub 設定指引」)](#)
 
-## Deploy a Django App on Render
+<br>
+
+## Deploy_a_Django_App_on_Render
+
+註冊Render帳號
+
+(我是用github帳號登入)
+
+`Web Service` → `New Web Service`（或是在右上角 `New` + 然後選 `Web Service`）
+
+登入你的 GitHub 做連結，就會出現下面的畫面，再來選你在 GitHub 的 Line Bot 專案名稱
+
+<img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/bb6ef3d8-420c-4963-9b0b-ed583c9c22f8">
+
+`Connect` 按下去後開始填資料
+
+<br>
+
+Build command填: `./build.sh` (相對位址才會找到檔案)
+
+要在存儲庫的主目錄中新增檔案(記得上傳github)
+
+build.sh
+
+    #!/usr/bin/env bash
+    # exit on error # 出錯時退出
+    set -o errexit
+    
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    
+    #python ./RobotProject/manage.py collectstatic --no-input
+    #python ./RobotProject/manage.py migrate
+
+Start Command要輸入命令來啟動 Django 應用程式: `gunicorn --pythonpath BotProject BotProject.wsgi`
+
+<br>
+
+`Advanced` / `Environment`
+
+Key : PYTHON_VERSION
+
+Value : 3.10.11
+
+<br>
+
+`Create Web Service` 按下去後，就會自動跑到這個畫面了，它就開始佈署你的 Line Bot
+
+`Your service is live 🎉` 就是部屬成功
+
+<br>
+
+複製左上角連結
+
+再到`LINE Developers` / `Messaging API`
+
+Edit Webhook URL : `https://police-robot.onrender.com/callback`
+
+按下 `Verify` 顯示Success就連接成功
+
+(Use webhook要開啟)
+
+<br>
+
+**Line成功畫面(重覆用戶文字訊息的回聲機器人)**
+
+<img width="277" alt="line" src="https://github.com/yazzzhu/police_robot/assets/80439162/8a05e20d-021d-4980-951f-566de8704452">
+
+※render免費限制
+
+每月 750 小時
+
+有連續 15 分鐘未使用會進入休眠，休眠後的甦醒時間約是 30 秒。
+
+
+
 
