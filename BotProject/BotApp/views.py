@@ -12,26 +12,27 @@ from linebot.models import MessageEvent, TextSendMessage
 line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
 parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
 
+
 @csrf_exempt
 def callback(request):
- 
     if request.method == 'POST':
         signature = request.META['HTTP_X_LINE_SIGNATURE']
         body = request.body.decode('utf-8')
- 
+
         try:
-            events = parser.parse(body, signature)  # 傳入的事件
+            events = parser.parse(body, signature)
         except InvalidSignatureError:
             return HttpResponseForbidden()
         except LineBotApiError:
             return HttpResponseBadRequest()
- 
+
         for event in events:
-            if isinstance(event, MessageEvent):  # 如果有訊息事件
-                line_bot_api.reply_message(  # 回復傳入的訊息文字
-                    event.reply_token,
-                    TextSendMessage(text=event.message.text)
-                )
+            if isinstance(event, MessageEvent):
+                mtext=event.message.text
+                message=[]
+                message.append(TextSendMessage(text=mtext))
+                line_bot_api.reply_message(event.reply_token,message)
+
         return HttpResponse()
     else:
         return HttpResponseBadRequest()

@@ -26,7 +26,7 @@ LINE_CHANNEL_SECRET = '2e1cee31e59726c026fc5fb77b1243ed'
 SECRET_KEY = 'django-insecure-%j@*vs71bpn!rty8e#ohkcdyb7p_mv3u_k+(m@=lm)+anv_z##'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
