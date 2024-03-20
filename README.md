@@ -1,5 +1,10 @@
 ## LINEBOT研究歷程
 
+ - [建置LINE Developers/GitHub/Django專案](#建置LINE_Developers/GitHub/Django專案)
+ - [資料庫遷移初始化及建立管理者帳號](#資料庫遷移初始化及建立管理者帳號)
+
+## 建置LINE_Developers/GitHub/Django專案
+
 #### **先到[LINE Developers](https://developers.line.biz/zh-hant/)**
 1.	建立Provider
 2.	建立Messaging API channel
@@ -67,12 +72,95 @@ cd 到要建立專案的資料夾下
     cd 到建立專案的資料夾下
     python manage.py startapp BotApp(APP名稱)
 
+新增兩個資料夾
+(static主要用於靜態資料如圖片、圖示、其他媒體檔案等等)
+(templates則是用於放模版，也就是寫好的html的網頁)
 
+    md templates
+    md static
 
+更改settings.py
+(把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前)
 
+    # SECURITY WARNING: keep the secret key used in production secret!
+    LINE_CHANNEL_ACCESS_TOKEN = '你的LINE Channel Access Token(於Basic settings)'
+    LINE_CHANNEL_SECRET = '你的LINE Channel Secret(於Messaging API)'
+    SECRET_KEY = 'Django專案的Secret Key'#此處不需更改
 
+<br>
 
+    DEBUG = True
+    
+    ALLOWED_HOSTS = ['*']
 
+在INSTALLED_APPS內新增剛剛建立的APP名稱
 
+    # Application definition
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'APP名稱('botapp.apps.BotappConfig',)' #新增APP名稱
+    ]
 
+在TEMPLATES中新增，templates的資料夾路徑
+
+    'DIRS': [os.path.join(BASE_DIR,'templates')], #新增templates資料夾路徑
+
+語系、時區的設定
+
+    LANGUAGE_CODE = 'zh-hant'
+    
+    TIME_ZONE = 'Asia/Taipei'
+
+新增static路徑
+
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR,'static')
+    STATICILES_DIRS = [
+        os.path.join(BASE_DIR,'static') #加入static路徑
+    ]
+
+在RobotApp應用程式資料夾下，新增urls.py
+
+    from django.urls import path
+    from . import views  #引用這個資料夾中的views檔案
+    urlpatterns = [
+        path('', views.index, name = "Index")
+    ]
+
+更改botproject下的urls.py
+
+    from django.contrib import admin
+    from django.urls import path, include  # 引用include函式
+    
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('posts/', include('botapp.urls')) #新增應用程式的網址
+    ]
+
+新增Procfile(無副檔名)
+
+    web: gunicorn --pythonpath BotProject BotProject.wsgi
+
+開啟views.py來撰寫對應的檢視函式(View Function)
+
+    from django.shortcuts import render
+    from django.http.response import HttpResponse
+    # Create your views here.
+    def index(request):
+        return HttpResponse("My First Django App.") 
+
+`python manage.py runserver`
+
+開啟http://127.0.0.1:8000/posts/
+
+<img width="313" alt="My_First_Django_App" src="https://github.com/yazzzhu/police_robot/assets/80439162/2addcc1e-152a-46fc-a0f1-aa918eda9790">
+
+#測試Django App開發
+
+## 資料庫遷移初始化及建立管理者帳號
 
