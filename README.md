@@ -2,6 +2,7 @@
 
  - [建置LINE Developers/GitHub/Django專案](#建置LINE_Developers/GitHub/Django專案)
  - [資料庫遷移初始化及建立管理者帳號](#資料庫遷移初始化及建立管理者帳號)
+ - [Deploy a Django App on Render](#Deploy_a_Django_App_on_Render)
 
 ## 建置LINE_Developers/GitHub/Django專案
 
@@ -171,6 +172,71 @@ cd 到要建立專案的資料夾下
     python manage.py makemigrations
     python manage.py migrate
 
+**建立一個管理者帳號**
 
+    python manage.py createsuperuser
 
+## 開發LINE Bot應用程式，以views.py為預設主要判斷程式
+
+編輯app應用程式資料夾下的views.py檔案
+
+    from django.shortcuts import render
+    
+    # Create your views here.
+    from django.conf import settings
+    from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
+    from django.views.decorators.csrf import csrf_exempt
+    
+    from linebot import LineBotApi, WebhookParser
+    from linebot.exceptions import InvalidSignatureError, LineBotApiError
+    from linebot.models import MessageEvent, TextSendMessage
+    
+    line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
+    parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
+    
+    @csrf_exempt
+    def callback(request):
+        if request.method == 'POST':
+            signature = request.META['HTTP_X_LINE_SIGNATURE']
+            body = request.body.decode('utf-8')
+    
+            try:
+                events = parser.parse(body, signature)
+            except InvalidSignatureError:
+                return HttpResponseForbidden()
+            except LineBotApiError:
+                return HttpResponseBadRequest()
+    
+            for event in events:
+                if isinstance(event, MessageEvent):
+                    mtext=event.message.text
+                    message=[]
+                    message.append(TextSendMessage(text=mtext))
+                    line_bot_api.reply_message(event.reply_token,message)
+    
+            return HttpResponse()
+        else:
+            return HttpResponseBadRequest()
+
+※要注意專案名稱不要命名為linebot，不然這段程式會出bug
+
+<br>
+
+更改botproject下的urls.py
+
+    from django.contrib import admin
+    from django.urls import path, include  # 引用include函式
+    from BotApp import views
+    
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('posts/', include('BotApp.urls')), #新增應用程式的網址
+        path('callback', views.callback),
+    ]
+
+**將檔案上傳至github上面**
+
+[(下載git詳見「Git 教學和 GitHub 設定指引」)](#Deploy a Django App on Render)
+
+## Deploy a Django App on Render
 
