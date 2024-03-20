@@ -162,5 +162,15 @@ cd 到要建立專案的資料夾下
 
 #測試Django App開發
 
+<br>
+
 ## 資料庫遷移初始化及建立管理者帳號
+
+**Django Migration(資料遷移) 資料庫遷移的初始化**
+
+    python manage.py makemigrations
+    python manage.py migrate
+
+
+
 
