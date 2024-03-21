@@ -90,7 +90,7 @@ cd 到要建立專案的資料夾下
     LINE_CHANNEL_SECRET = '你的LINE Channel Secret(於Messaging API)'
     SECRET_KEY = 'Django專案的Secret Key'#此處不需更改
 
-<br>
+若此處設定為False，則網頁出現Bug的時候，會呈現HTTP 404的Status Code
 
     DEBUG = True
     
@@ -240,7 +240,7 @@ cd 到要建立專案的資料夾下
 
 **將檔案上傳至github上面**
 
-[(下載git詳見「Git 教學和 GitHub 設定指引」)](#)
+[(下載git詳見「Git 教學和 GitHub 設定指引」)](#Git教學和GitHub設定指引)
 
 <br>
 
@@ -316,6 +316,67 @@ Edit Webhook URL : `https://police-robot.onrender.com/callback`
 
 有連續 15 分鐘未使用會進入休眠，休眠後的甦醒時間約是 30 秒。
 
+## **Git教學和GitHub設定指引**
+
+安裝Git for Windows ([https://gitforwindows.org/](https://gitforwindows.org/))
+
+修改預設編輯器為vscode
+
+其餘步驟都預設下一步就行
+
+<br>
+
+到Git Bish或vscode的Git Bish
+
+    git --version #確認版本
+
+設定使用者(若已有 GitHub 帳號，建議和 GitHub 使用相同的)
+
+    git config --global user.name "<Your Name>"
+    git config --global user.email "<your@gmail.com>"
+
+    git config --list   #檢視 git 設定
+
+<br>
+
+**(上傳github流程)**
+
+    cd 到建立專案的資料夾下
+    git init #初始化Git Repository(建立.git之隱藏檔案)
+    git status #觀察Repository檔案追蹤狀況
+    git add '檔名' #將檔案加入追蹤清單，如: git add .(add全)
+    
+再一次 `git status` 就會列出新增清單
+
+    git commit -m "此處填版本訊息" #建一組版本更新訊息
+    
+再一次 `git status` 可以發現訊息已經被清空，後續可以在github上看到
+
+    git push origin master
+
+<br>
+
+**連接到遠端**
+
+    git remote add origin(遠端空間名稱) https://github.com/yazzzhu/police_robot.git(遠端地址)
+
+* 有error: remote origin already exists. #已存在之錯誤:
+    * 先刪除 git remote rm origin
+    * 後增加 git remote add origin git@github.com: yazzzhu/police_linebot.git
+
+<br>
+
+    git remote -v #查詢遠端的repository
+    git branch -M main
+
+`(有error: failed to push some refs to '~.git'錯誤: git pull --rebase origin master)`
+
+    git push (-u) origin(遠端空間名稱) master(遠端空間的分支名稱)
+    [Hint] "-u"會把預設的remote設成origin, 未來push若不指定remote,則都會推到origin
+
+登入授權就連接成功
+
+    git push(先前設定origin為預設，連接之後可以直接push)
 
 
 
