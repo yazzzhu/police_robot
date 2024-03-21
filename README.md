@@ -64,7 +64,9 @@ cd 到要建立專案的資料夾下
 
 ※如若出現紅字
 
+<div align=center>
 <img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/8882f300-0aea-45a0-8254-874af91920a3">
+</div>
 
 `python manage.py migrate` 後再執行就行
 
