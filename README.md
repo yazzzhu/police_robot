@@ -106,7 +106,7 @@ cd 到要建立專案的資料夾下
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'APP名稱('botapp.apps.BotappConfig',)' #新增APP名稱
+        'APP名稱', #新增APP名稱('botapp.apps.BotappConfig',)
     ]
 
 在TEMPLATES中新增，templates的資料夾路徑
@@ -157,7 +157,9 @@ cd 到要建立專案的資料夾下
     def index(request):
         return HttpResponse("My First Django App.") 
 
-`python manage.py runserver`
+<br>
+
+    python manage.py runserver
 
 開啟http://127.0.0.1:8000/posts/
 
@@ -272,11 +274,8 @@ build.sh
     
     pip install --upgrade pip
     pip install -r requirements.txt
-    
-    #python ./RobotProject/manage.py collectstatic --no-input
-    #python ./RobotProject/manage.py migrate
 
-Start Command要輸入命令來啟動 Django 應用程式: `gunicorn --pythonpath BotProject BotProject.wsgi`
+Start Command要輸入命令來啟動 Django 應用程式: `gunicorn --pythonpath BotProject BotProject.wsgi` (BotProject專案名)
 
 <br>
 
@@ -298,7 +297,7 @@ Value : 3.10.11
 
 再到`LINE Developers` / `Messaging API`
 
-Edit Webhook URL : `https://police-robot.onrender.com/callback`
+Edit Webhook URL : `https:~(複製的連結)/callback`
 
 按下 `Verify` 顯示Success就連接成功
 
@@ -358,11 +357,11 @@ Edit Webhook URL : `https://police-robot.onrender.com/callback`
 
 **連接到遠端**
 
-    git remote add origin(遠端空間名稱) https://github.com/yazzzhu/police_robot.git(遠端地址)
+    git remote add origin(遠端空間名稱) https:~(遠端地址)
 
 * 有error: remote origin already exists. #已存在之錯誤:
     * 先刪除 git remote rm origin
-    * 後增加 git remote add origin git@github.com: yazzzhu/police_linebot.git
+    * 後增加 git remote add origin git@github.com:~.git
 
 <br>
 
