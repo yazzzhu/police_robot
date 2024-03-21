@@ -14,9 +14,12 @@
 
 Messaging API > LINE Official Account features > Auto-reply messages > `Edit`
 
+<div align=center>
+ 
 回應功能 Webhooks：這個選項要記得打開(`Enabled`)
 
 <img width="416" alt="Webhooks_Enabled" src="https://github.com/yazzzhu/police_robot/assets/80439162/ba8c394b-ceec-4e75-a71c-63ac262c874f">
+</div>
 
 <br>
 <br>
@@ -62,13 +65,14 @@ cd 到要建立專案的資料夾下
 
 (ctrl+c退出運行模式)
 
-※如若出現紅字
-
 <div align=center>
+ 
+※如若出現紅字
+ 
 <img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/8882f300-0aea-45a0-8254-874af91920a3">
-</div>
 
 `python manage.py migrate` 後再執行就行
+</div>
 
 <br>
 
@@ -159,15 +163,16 @@ cd 到要建立專案的資料夾下
     def index(request):
         return HttpResponse("My First Django App.") 
 
-<br>
+#測試Django App開發
 
     python manage.py runserver
-
+    
+<div align=center>
+ 
 開啟http://127.0.0.1:8000/posts/
 
 <img width="313" alt="My_First_Django_App" src="https://github.com/yazzzhu/police_robot/assets/80439162/2addcc1e-152a-46fc-a0f1-aa918eda9790">
-
-#測試Django App開發
+</div>
 
 <br>
 
@@ -258,11 +263,11 @@ cd 到要建立專案的資料夾下
 
 登入你的 GitHub 做連結，就會出現下面的畫面，再來選你在 GitHub 的 Line Bot 專案名稱
 
+<div align=center>
 <img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/7aa9b3fa-c1c9-4b52-b5c5-028e3b20ca44">
 
 `Connect` 按下去後開始填資料
-
-<br>
+</div>
 
 Build command填: `./build.sh` (相對位址才會找到檔案)
 
