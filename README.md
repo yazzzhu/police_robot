@@ -5,6 +5,7 @@
  - [開發LINE Bot應用程式](#開發LINE_Bot應用程式，以views.py為預設主要判斷程式)
  - [Deploy a Django App on Render](#Deploy_a_Django_App_on_Render)
  - [Git 教學和 GitHub 設定指引](#Git教學和GitHub設定指引)
+ - [參考資料](#參考資料)
 
 ## 建置LINE_Developers/GitHub/Django專案
 
@@ -389,5 +390,16 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
 
     git push(先前設定origin為預設，連接之後可以直接push)
 
+## **參考資料**
+
+[[Python+LINE Bot教學]6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html)
+
+[用Django架構建置專屬的LINEBOT吧 系列](https://ithelp.ithome.com.tw/users/20121176/ironman/3023)
+
+[Git 詳細安裝教學](https://blog.csdn.net/mukes/article/details/115693833)
+
+[git 與 GitHub 基本概念與操作(I share, therefore I am.: git 與 GitHub 基本概念與操作)](https://seansharingblog.blogspot.com/2019/05/git-very-basic.html)
+
+[Day13- git/github操作. 今天紀錄如何用Git上傳自己的專案到github上面。 | by Tsung-Yu | Tom’s blog | Medium](https://medium.com/tsungs-blog/day13-git-github%E6%93%8D%E4%BD%9C-304ad94a1c6a)
 
 
