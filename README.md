@@ -4,7 +4,7 @@
  - [資料庫遷移初始化及建立管理者帳號](#資料庫遷移初始化及建立管理者帳號)
  - [開發LINE Bot應用程式](#開發LINE_Bot應用程式，以views.py為預設主要判斷程式)
  - [Deploy a Django App on Render](#Deploy_a_Django_App_on_Render)
- - [Git 教學和 GitHub 設定指引](#)
+ - [Git 教學和 GitHub 設定指引](#Git教學和GitHub設定指引)
 
 ## 建置LINE_Developers/GitHub/Django專案
 
