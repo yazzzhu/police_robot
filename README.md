@@ -246,7 +246,7 @@ cd 到要建立專案的資料夾下
 
 <br>
 
-## Deploy_a_Django_App_on_Render
+## Deploy a_Django_App_on_Render
 
 註冊Render帳號
 
