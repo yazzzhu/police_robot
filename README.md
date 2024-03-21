@@ -99,6 +99,42 @@ cd 到要建立專案的資料夾下
     LINE_CHANNEL_SECRET = '你的LINE Channel Secret(於Messaging API)'
     SECRET_KEY = 'Django專案的Secret Key'#此處不需更改
 
+> ※由於會上傳github，LINE的Channel Access Token跟Channel Secre比較不建議直接公布在網路
+> 
+> 建立一個 .txt 檔寫入以下內容後，將整個檔名（包含副檔名）改為 .env
+> 
+> 跟 manage.py 放同一層資料夾
+
+    CHANNEL_SECRET='你的CHANNEL_SECRET'
+    CHANNEL_ACCESS_TOKEN='你的CHANNEL_ACCESS_TOKEN'
+
+> 編輯.gitignore(沒有.gitignore檔，就自己建)
+
+    touch .gitignore
+
+> .gitignore
+
+    # 忽略.env檔案
+    .env
+
+> 安裝套件
+
+    pip install python-dotenv
+
+> (如需更新套件清單pip freeze > requirements.txt)
+
+> settings.py 加入
+
+    from dotenv import load_dotenv
+    
+    load_dotenv(encoding="utf-8")
+    LINE_CHANNEL_ACCESS_TOKEN = os.getenv('CHANNEL_SECRET')
+    LINE_CHANNEL_SECRET = os.getenv('CHANNEL_ACCESS_TOKEN')
+
+> ※render就必須設定[環境變數](#環境變數)
+
+<br>
+
 若此處設定為False，則網頁出現Bug的時候，會呈現HTTP 404的Status Code
 
     DEBUG = True
@@ -289,11 +325,24 @@ Start Command要輸入命令來啟動 Django 應用程式: `gunicorn --pythonpat
 
 <br>
 
+##### 環境變數
+
 `Advanced` / `Environment`
 
 Key : PYTHON_VERSION
 
 Value : 3.10.11
+
+> (.env有設定就需設置環境變數)
+> 
+> `Add from .env`
+
+    CHANNEL_SECRET='你的CHANNEL_SECRET'
+    CHANNEL_ACCESS_TOKEN='你的CHANNEL_ACCESS_TOKEN'
+
+<div align=center>
+<img width="739" alt="Environment" src="https://github.com/yazzzhu/police_robot/assets/80439162/c8e425db-0ce4-483c-8001-a58395093602">
+</div>
 
 <br>
 
