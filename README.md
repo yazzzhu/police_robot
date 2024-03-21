@@ -321,7 +321,10 @@ build.sh
     pip install --upgrade pip
     pip install -r requirements.txt
 
-Start Command要輸入命令來啟動 Django 應用程式: `gunicorn --pythonpath BotProject BotProject.wsgi` (BotProject專案名)
+Start Command要輸入命令來啟動 Django 應用程式: 
+
+    gunicorn --pythonpath BotProject BotProject.wsgi
+    (BotProject專案名)
 
 <br>
 
