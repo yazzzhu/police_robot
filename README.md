@@ -64,7 +64,7 @@ cd 到要建立專案的資料夾下
 
 ※如若出現紅字
 
-<img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/78abe654-e603-4c06-a4c4-4665f180c20d">
+<img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/8882f300-0aea-45a0-8254-874af91920a3">
 
 `python manage.py migrate` 後再執行就行
 
@@ -256,7 +256,7 @@ cd 到要建立專案的資料夾下
 
 登入你的 GitHub 做連結，就會出現下面的畫面，再來選你在 GitHub 的 Line Bot 專案名稱
 
-<img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/bb6ef3d8-420c-4963-9b0b-ed583c9c22f8">
+<img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/7aa9b3fa-c1c9-4b52-b5c5-028e3b20ca44">
 
 `Connect` 按下去後開始填資料
 
