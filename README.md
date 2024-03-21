@@ -323,8 +323,7 @@ build.sh
 
 Start Command要輸入命令來啟動 Django 應用程式: 
 
-    gunicorn --pythonpath BotProject BotProject.wsgi
-    (BotProject專案名)
+`gunicorn --pythonpath BotProject BotProject.wsgi` (BotProject專案名)
 
 <br>
 
