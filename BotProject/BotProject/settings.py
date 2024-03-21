@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 load_dotenv(encoding="utf-8")
-CHANNEL_SECRET = os.getenv('CHANNEL_SECRET')
-CHANNEL_ACCESS_TOKEN = os.getenv('CHANNEL_ACCESS_TOKEN')
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv('CHANNEL_SECRET')
+LINE_CHANNEL_SECRET = os.getenv('CHANNEL_ACCESS_TOKEN')
 SECRET_KEY = 'django-insecure-%j@*vs71bpn!rty8e#ohkcdyb7p_mv3u_k+(m@=lm)+anv_z##'
 
 # SECURITY WARNING: don't run with debug turned on in production!
