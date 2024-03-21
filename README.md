@@ -390,6 +390,8 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
 
     git push(先前設定origin為預設，連接之後可以直接push)
 
+<br>
+
 ## **參考資料**
 
 [[Python+LINE Bot教學]6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html)
@@ -401,5 +403,3 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
 [git 與 GitHub 基本概念與操作(I share, therefore I am.: git 與 GitHub 基本概念與操作)](https://seansharingblog.blogspot.com/2019/05/git-very-basic.html)
 
 [Day13- git/github操作. 今天紀錄如何用Git上傳自己的專案到github上面。 | by Tsung-Yu | Tom’s blog | Medium](https://medium.com/tsungs-blog/day13-git-github%E6%93%8D%E4%BD%9C-304ad94a1c6a)
-
-
