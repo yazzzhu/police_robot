@@ -195,6 +195,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 新增Procfile(無副檔名)
 
     web: gunicorn --pythonpath BotProject BotProject.wsgi
+    (BotProject專案名)
 
 開啟views.py來撰寫對應的檢視函式(View Function)
 
