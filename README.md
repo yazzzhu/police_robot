@@ -11,7 +11,8 @@
 
 ## 建置LINE_Developers/GitHub/Django專案
 
-#### **先到[LINE Developers](https://developers.line.biz/zh-hant/)**
+**先到[LINE Developers](https://developers.line.biz/zh-hant/)**
+
 1.	建立Provider
 2.	建立Messaging API channel
 
@@ -27,13 +28,13 @@ Messaging API > LINE Official Account features > Auto-reply messages > `Edit`
 <br>
 <br>
 
-#### **在 GitHub 建立專案**
+**在 GitHub 建立專案**
 
 `New repository` > 輸入專案名稱
 
 <br>
 
-#### **架設Django網站框架(於cmd)**
+**架設Django網站框架(於cmd)**
 
 cd 到要建立專案的資料夾下
 
@@ -79,7 +80,7 @@ cd 到要建立專案的資料夾下
 
 <br>
 
-#### **建立Django APP**
+**建立Django APP**
 
     cd 到建立專案的資料夾下
     python manage.py startapp BotApp(APP名稱)
@@ -91,7 +92,8 @@ cd 到要建立專案的資料夾下
     md templates
     md static
 
-更改settings.py
+**更改settings.py**
+
 (把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前)
 
     # SECURITY WARNING: keep the secret key used in production secret!
@@ -173,7 +175,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
         os.path.join(BASE_DIR,'static') #加入static路徑
     ]
 
-在RobotApp應用程式資料夾下，新增urls.py
+**在RobotApp應用程式資料夾下，新增urls.py**
 
     from django.urls import path
     from . import views  #引用這個資料夾中的views檔案
@@ -181,7 +183,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
         path('', views.index, name = "Index")
     ]
 
-更改botproject下的urls.py
+**更改botproject下的urls.py**
 
     from django.contrib import admin
     from django.urls import path, include  # 引用include函式
@@ -191,12 +193,12 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
         path('posts/', include('botapp.urls')) #新增應用程式的網址
     ]
 
-新增Procfile(無副檔名)
+**新增Procfile(無副檔名)**
 
     web: gunicorn --pythonpath BotProject BotProject.wsgi
     (BotProject專案名)
 
-開啟views.py來撰寫對應的檢視函式(View Function)
+**開啟views.py來撰寫對應的檢視函式(View Function)**
 
     from django.shortcuts import render
     from django.http.response import HttpResponse
@@ -276,7 +278,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 
 <br>
 
-更改botproject下的urls.py
+**更改botproject下的urls.py**
 
     from django.contrib import admin
     from django.urls import path, include  # 引用include函式
@@ -313,7 +315,7 @@ Build command填: `./build.sh` (相對位址才會找到檔案)
 
 要在存儲庫的主目錄中新增檔案(記得上傳github)
 
-build.sh
+**build.sh**
 
     #!/usr/bin/env bash
     # exit on error # 出錯時退出
