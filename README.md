@@ -371,7 +371,7 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
  
 **Line成功畫面(重覆用戶文字訊息的回聲機器人)**
 
-<img width="277" alt="line" src="https://github.com/yazzzhu/police_robot/assets/80439162/8a05e20d-021d-4980-951f-566de8704452">
+<img width="277" alt="line" src="https://github.com/yazzzhu/police_robot/assets/80439162/172daf78-b3eb-44d0-9cc5-e0f3de7298c9">
 </div>
 
 ※render免費限制
