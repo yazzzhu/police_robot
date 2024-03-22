@@ -137,6 +137,8 @@ cd 到要建立專案的資料夾下
 
 若此處設定為False，則網頁出現Bug的時候，會呈現HTTP 404的Status Code
 
+DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯，在上線部署時，要改成False增加網站安全性
+
     DEBUG = True
     
     ALLOWED_HOSTS = ['*']
