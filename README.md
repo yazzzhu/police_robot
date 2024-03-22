@@ -284,7 +284,6 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
     
     urlpatterns = [
         path('admin/', admin.site.urls),
-        path('posts/', include('BotApp.urls')), #新增應用程式的網址
         path('callback', views.callback),
     ]
 
