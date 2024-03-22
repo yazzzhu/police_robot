@@ -169,7 +169,6 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 新增static路徑
 
     STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR,'static')
     STATICILES_DIRS = [
         os.path.join(BASE_DIR,'static') #加入static路徑
     ]
