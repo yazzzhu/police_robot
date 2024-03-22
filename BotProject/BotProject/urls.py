@@ -21,6 +21,6 @@ from BotApp import views
 urlpatterns = [
     #path('',views.homeview),
     path('admin/', admin.site.urls),
-    path('posts/', include('BotApp.urls')), #新增應用程式的網址
-    #path('callback', views.callback),
+    #path('posts/', include('BotApp.urls')), #新增應用程式的網址
+    path('callback', views.callback),
 ]
