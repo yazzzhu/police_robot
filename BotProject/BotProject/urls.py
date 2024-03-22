@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include  # 引用include函式
-from BotApp import views
+#from BotApp import views
 
 urlpatterns = [
     #path('',views.homeview),
     path('admin/', admin.site.urls),
     #path('posts/', include('BotApp.urls')), #新增應用程式的網址
-    path('callback', views.callback),
+    path('callback', include('BotApp.urls')),
+    #path('callback', views.callback),
 ]
