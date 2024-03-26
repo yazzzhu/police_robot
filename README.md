@@ -265,11 +265,11 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
     
             for event in events:
                 if isinstance(event, MessageEvent):
-                    mtext=event.message.text
-                    message=[]
-                    message.append(TextSendMessage(text=mtext))
-                    line_bot_api.reply_message(event.reply_token,message)
-    
+                    line_bot_api.reply_message(  # 回復傳入的訊息文字
+                    event.reply_token,
+                    TextSendMessage(text=event.message.text)
+                )
+            
             return HttpResponse()
         else:
             return HttpResponseBadRequest()
