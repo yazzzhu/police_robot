@@ -7,7 +7,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
-from linebot.models import MessageEvent, TextSendMessage
+from linebot.models import MessageEvent, TextMessage
+from module import func
 
 #from django.http import HttpResponse
 
@@ -32,10 +33,19 @@ def callback(request):
 
         for event in events:
             if isinstance(event, MessageEvent):
-                line_bot_api.reply_message(  # 回復傳入的訊息文字
-                    event.reply_token,
-                    TextSendMessage(text=event.message.text)
-                )
+                if isinstance(event.message, TextMessage):
+                    mtext = event.message.text
+                    if mtext == '主題一':
+                        func.sendText1(event)
+    
+                    elif mtext == '主題二':
+                        func.sendIText2 (event)
+    
+                    elif mtext == '主題三':
+                        func.sendIText3 (event)
+    
+                    elif mtext == '警政統計專區':
+                        func.sendText4 (event)
 
         return HttpResponse()
     else:
