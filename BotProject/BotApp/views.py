@@ -39,13 +39,10 @@ def callback(request):
                         func.sendText1(event)
     
                     elif mtext == '主題二':
-                        func.sendIText2 (event)
+                        func.sendText2(event)
     
                     elif mtext == '主題三':
-                        func.sendIText3 (event)
-    
-                    elif mtext == '警政統計專區':
-                        func.sendText4 (event)
+                        func.sendText3(event)
 
         return HttpResponse()
     else:

@@ -42,14 +42,3 @@ def sendText3(event):
             event.reply_token,TextSendMessage(text='ERROR!')
         )
 
-def sendText4(event):
-    try:
-        message = TextSendMessage(
-            text='4444',
-        )
-        
-        line_bot_api.reply_message(event.reply_token,message)
-    except:
-        line_bot_api.reply_message(
-            event.reply_token,TextSendMessage(text='ERROR!')
-        )
