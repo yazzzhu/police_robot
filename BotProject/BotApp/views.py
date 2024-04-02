@@ -42,7 +42,7 @@ def callback(request):
                         func.sendText2(event)
     
                     elif mtext == '警政統計主題圖卡':
-                        func.sendText3(event)
+                        func.sendTextFlexImage(event)
 
         return HttpResponse()
     else:
