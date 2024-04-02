@@ -41,7 +41,7 @@ def callback(request):
                     elif mtext == '主題二':
                         func.sendText2(event)
     
-                    elif mtext == '主題三':
+                    elif mtext == '警政統計主題圖卡':
                         func.sendText3(event)
 
         return HttpResponse()
