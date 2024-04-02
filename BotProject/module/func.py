@@ -61,7 +61,12 @@ def sendTextFlexImage(event):
                             "type": "image",
                             "url": "https://github.com/yazzzhu/police_robot/blob/master/image/1%E4%BA%A4%E9%80%9A.png?raw=true",
                             "size": "full",
-                            "align": "center"
+                            "align": "center",
+                            "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://github.com/yazzzhu/police_robot/blob/master/image/1%E4%BA%A4%E9%80%9A.png?raw=true"
+                            }
                         },
                         {
                             "type": "separator"
