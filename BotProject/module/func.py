@@ -1,15 +1,9 @@
-import json
-
 from django.conf import settings
 
 from linebot import LineBotApi
 from linebot.models import TextSendMessage,ImageSendMessage,StickerSendMessage,LocationSendMessage,QuickReply,QuickReplyButton,MessageAction
 #放入處理回覆訊息所需的模組
 from linebot.models import FlexSendMessage
-from linebot.models.flex_message import (
-    BubbleContainer, ImageComponent, BoxComponent, TextComponent, IconComponent, SeparatorComponent, ButtonComponent
-)
-from linebot.models.actions import URIAction
 #放入處理flex message所需的模組
 
 line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
