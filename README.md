@@ -22,7 +22,7 @@ Messaging API > LINE Official Account features > Auto-reply messages > `Edit`
  
 回應功能 Webhooks：這個選項要記得打開(`Enabled`)
 
-<img width="416" alt="Webhooks_Enabled" src="https://github.com/yazzzhu/police_robot/assets/80439162/ba8c394b-ceec-4e75-a71c-63ac262c874f">
+<img width="416" alt="Webhooks_Enabled" src="https://github.com/yazzzhu/police_robot/assets/80439162/5d41bbe7-65a4-4115-894b-de31ffcc249f">
 </div>
 
 <br>
@@ -72,8 +72,8 @@ cd 到要建立專案的資料夾下
 <div align=center>
  
 ※如若出現紅字
- 
-<img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/8882f300-0aea-45a0-8254-874af91920a3">
+
+<img width="408" alt="red_error" src="https://github.com/yazzzhu/police_robot/assets/80439162/ff027b7f-6bac-4e17-b045-cca0777dc5d5">
 
 `python manage.py migrate` 後再執行就行
 </div>
@@ -214,7 +214,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
  
 開啟http://127.0.0.1:8000/posts/
 
-<img width="313" alt="My_First_Django_App" src="https://github.com/yazzzhu/police_robot/assets/80439162/2addcc1e-152a-46fc-a0f1-aa918eda9790">
+<img width="313" alt="My_First_Django_App" src="https://github.com/yazzzhu/police_robot/assets/80439162/af728d7f-e517-4d91-9a77-f98113b4a8df">
 </div>
 
 <br>
@@ -306,7 +306,8 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 登入你的 GitHub 做連結，就會出現下面的畫面，再來選你在 GitHub 的 Line Bot 專案名稱
 
 <div align=center>
-<img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/7aa9b3fa-c1c9-4b52-b5c5-028e3b20ca44">
+
+<img width="416" alt="Render" src="https://github.com/yazzzhu/police_robot/assets/80439162/f7373901-1345-44d7-b387-b8a2dc1c2759">
 
 `Connect` 按下去後開始填資料
 </div>
@@ -344,7 +345,7 @@ Value : 3.10.11
     CHANNEL_ACCESS_TOKEN='你的CHANNEL_ACCESS_TOKEN'
 
 <div align=center>
-<img width="739" alt="Environment" src="https://github.com/yazzzhu/police_robot/assets/80439162/c8e425db-0ce4-483c-8001-a58395093602">
+<img width="739" alt="Environment" src="https://github.com/yazzzhu/police_robot/assets/80439162/ba569591-e4a7-4ad5-8c57-bf462f7b75f1">
 </div>
 
 <br>
@@ -371,7 +372,7 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
  
 **Line成功畫面(重覆用戶文字訊息的回聲機器人)**
 
-<img width="277" alt="line" src="https://github.com/yazzzhu/police_robot/assets/80439162/172daf78-b3eb-44d0-9cc5-e0f3de7298c9">
+<img width="277" alt="line" src="https://github.com/yazzzhu/police_robot/assets/80439162/cac2106f-1d96-41a0-8f15-84a1e8e8feeb">
 </div>
 
 ※render免費限制
