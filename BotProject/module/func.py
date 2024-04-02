@@ -66,10 +66,12 @@ def sendTextFlexImage(event):
                             "type": "uri",
                             "label": "action",
                             "uri": "https://github.com/yazzzhu/police_robot/blob/master/image/1%E4%BA%A4%E9%80%9A.png?raw=true"
-                            }
+                            },
+                            "aspectRatio": "4:3"
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
@@ -120,10 +122,12 @@ def sendTextFlexImage(event):
                             "type": "uri",
                             "label": "action",
                             "uri": "https://github.com/yazzzhu/police_robot/blob/master/image/2%E5%AE%B6%E6%9A%B4.png?raw=true"
-                            }
+                            },
+                            "aspectRatio": "4:3"
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
@@ -171,6 +175,7 @@ def sendTextFlexImage(event):
                             "url": "https://github.com/yazzzhu/police_robot/blob/master/image/3%E8%A9%90%E9%A8%99.png?raw=true",
                             "size": "full",
                             "align": "center",
+                            "aspectRatio": "4:3",
                             "action": {
                             "type": "uri",
                             "label": "action",
@@ -178,7 +183,8 @@ def sendTextFlexImage(event):
                             }
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
@@ -225,6 +231,7 @@ def sendTextFlexImage(event):
                             "url": "https://github.com/yazzzhu/police_robot/blob/master/image/4%E5%A4%B1%E8%B9%A4.png?raw=true",
                             "size": "full",
                             "align": "center",
+                            "aspectRatio": "4:3",
                             "action": {
                             "type": "uri",
                             "label": "action",
@@ -232,7 +239,8 @@ def sendTextFlexImage(event):
                             }
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
@@ -280,6 +288,7 @@ def sendTextFlexImage(event):
                             "url": "https://github.com/yazzzhu/police_robot/blob/master/image/5%E8%AD%A6%E5%93%A1%E6%95%B8.png?raw=true",
                             "size": "full",
                             "align": "center",
+                            "aspectRatio": "4:3",
                             "action": {
                             "type": "uri",
                             "label": "action",
@@ -287,7 +296,8 @@ def sendTextFlexImage(event):
                             }
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
@@ -334,6 +344,7 @@ def sendTextFlexImage(event):
                             "url": "https://github.com/yazzzhu/police_robot/blob/master/image/6%E5%88%91%E4%BA%8B.png?raw=true",
                             "size": "full",
                             "align": "center",
+                            "aspectRatio": "4:3",
                             "action": {
                             "type": "uri",
                             "label": "action",
@@ -341,7 +352,8 @@ def sendTextFlexImage(event):
                             }
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "margin": "xxl"
                         },
                         {
                             "type": "text",
