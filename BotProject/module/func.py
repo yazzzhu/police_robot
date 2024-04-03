@@ -51,7 +51,8 @@ def sendTextFlexImage(event):
                             "align": "center",
                             "size": "lg"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -75,7 +76,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "近5年高雄市行人交通事故件數……",
+                            "text": "近5年高雄市行人交通事故件數，由108年……",
                             "margin": "md"
                         },
                         {
@@ -108,7 +109,8 @@ def sendTextFlexImage(event):
                             "size": "lg",
                             "weight": "bold"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -166,7 +168,8 @@ def sendTextFlexImage(event):
                             "align": "center",
                             "size": "lg"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -223,7 +226,8 @@ def sendTextFlexImage(event):
                             "size": "lg",
                             "weight": "bold"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -281,7 +285,8 @@ def sendTextFlexImage(event):
                             "align": "center",
                             "size": "lg"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -305,7 +310,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "在性別平等工作持續推動下，近10年……",
+                            "text": "在性別平等工作持續推動下，近10年高雄市……",
                             "margin": "md"
                         },
                         {
@@ -338,7 +343,8 @@ def sendTextFlexImage(event):
                             "size": "lg",
                             "weight": "bold"
                         }
-                        ]
+                        ],
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
