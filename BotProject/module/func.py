@@ -50,7 +50,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -110,7 +110,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -171,7 +171,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -231,7 +231,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -292,7 +292,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -352,7 +352,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "50px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
