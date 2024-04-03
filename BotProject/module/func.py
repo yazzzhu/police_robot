@@ -51,7 +51,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -111,7 +111,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -172,7 +172,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -196,7 +196,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "112年高雄市詐欺案件占全般刑案11.83%……",
+                            "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺……",
                             "size": "sm",
                             "margin": "md"
                         },
@@ -232,7 +232,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -293,7 +293,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
@@ -353,7 +353,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "60px"
+                        "height": "55px"
                     },
                     "body": {
                         "type": "box",
