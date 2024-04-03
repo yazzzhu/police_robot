@@ -50,8 +50,7 @@ def sendTextFlexImage(event):
                             "weight": "bold",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -71,12 +70,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": "近5年高雄市行人交通事故件數，由108年……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
@@ -110,8 +109,7 @@ def sendTextFlexImage(event):
                             "weight": "bold",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -131,12 +129,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": "為防治家庭暴力行為與保護被害人權益，透過……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
@@ -171,8 +169,7 @@ def sendTextFlexImage(event):
                             "align": "center",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -192,12 +189,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
@@ -231,8 +228,7 @@ def sendTextFlexImage(event):
                             "weight": "bold",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -252,12 +248,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": "近5年高雄市每年失蹤人口發生數約介於……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
@@ -292,8 +288,7 @@ def sendTextFlexImage(event):
                             "align": "center",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -313,12 +308,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": "在性別平等工作持續推動下，近10年高雄市……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
@@ -352,8 +347,7 @@ def sendTextFlexImage(event):
                             "weight": "bold",
                             "size": "lg"
                         }
-                        ],
-                        "height": "60px"
+                        ]
                     },
                     "body": {
                         "type": "box",
@@ -373,12 +367,12 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "xl"
                         },
                         {
                             "type": "text",
                             "text": " 近10年高雄市全般刑案發生數呈下降趨勢……",
-                            "margin": "md"
+                            "margin": "lg"
                         },
                         {
                             "type": "button",
