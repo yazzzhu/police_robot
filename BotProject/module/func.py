@@ -48,8 +48,7 @@ def sendTextFlexImage(event):
                             "text": "行人路權優先，保障你我安全",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "align": "center",
-                            "size": "lg"
+                            "align": "center"
                         }
                         ],
                         "height": "60px"
@@ -77,7 +76,8 @@ def sendTextFlexImage(event):
                         {
                             "type": "text",
                             "text": "近5年高雄市行人交通事故件數，由108年……",
-                            "margin": "md"
+                            "margin": "md",
+                            "size": "sm"
                         },
                         {
                             "type": "button",
@@ -86,7 +86,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=599332A021320E12"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "color": "#7878FF",
+                            "offsetTop": "md"
                         }
                         ]
                     },
@@ -106,7 +108,6 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "攜手反暴力 愛擁抱不擁暴",
                             "color": "#ffffff",
-                            "size": "lg",
                             "weight": "bold"
                         }
                         ],
@@ -134,7 +135,8 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "為防治家庭暴力行為與保護被害人權益……",
+                            "text": "為防治家庭暴力行為與保護被害人權益，透過……",
+                            "size": "sm",
                             "margin": "md"
                         },
                         {
@@ -144,7 +146,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=A13A4E2BA960766E"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "color": "#B0AEFF",
+                            "offsetTop": "md"
                         }
                         ]
                     },
@@ -165,8 +169,7 @@ def sendTextFlexImage(event):
                             "text": "詐欺花招多，小心謹慎看緊辛苦錢！",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "align": "center",
-                            "size": "lg"
+                            "align": "center"
                         }
                         ],
                         "height": "60px"
@@ -194,6 +197,7 @@ def sendTextFlexImage(event):
                         {
                             "type": "text",
                             "text": "112年高雄市詐欺案件占全般刑案11.83%……",
+                            "size": "sm",
                             "margin": "md"
                         },
                         {
@@ -203,7 +207,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=51FE6A2309B2325C"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "offsetTop": "md",
+                            "color": "#7878FF"
                         }
                         ]
                     },
@@ -223,7 +229,6 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "尋獲失蹤人口撫平家屬擔憂",
                             "color": "#ffffff",
-                            "size": "lg",
                             "weight": "bold"
                         }
                         ],
@@ -252,7 +257,8 @@ def sendTextFlexImage(event):
                         {
                             "type": "text",
                             "text": "近5年高雄市每年失蹤人口發生數約介於……",
-                            "margin": "md"
+                            "margin": "md",
+                            "size": "sm"
                         },
                         {
                             "type": "button",
@@ -261,7 +267,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=639D3F27CB77DE1B"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "color": "#B0AEFF",
+                            "offsetTop": "md"
                         }
                         ]
                     },
@@ -282,8 +290,7 @@ def sendTextFlexImage(event):
                             "text": "落實推動性別平等，營造友善職場：近10年女性警察官占比逐年提升！",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "align": "center",
-                            "size": "lg"
+                            "align": "center"
                         }
                         ],
                         "height": "60px"
@@ -311,7 +318,8 @@ def sendTextFlexImage(event):
                         {
                             "type": "text",
                             "text": "在性別平等工作持續推動下，近10年高雄市……",
-                            "margin": "md"
+                            "margin": "md",
+                            "size": "sm"
                         },
                         {
                             "type": "button",
@@ -320,7 +328,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=0D7095AB0D8EC979"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "color": "#7878FF",
+                            "offsetTop": "md"
                         }
                         ]
                     },
@@ -340,7 +350,6 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "民眾生命安全之守護神：近10年治安數據呈「發生數下降、破獲率增加。」持續進步趨勢",
                             "color": "#ffffff",
-                            "size": "lg",
                             "weight": "bold"
                         }
                         ],
@@ -369,7 +378,8 @@ def sendTextFlexImage(event):
                         {
                             "type": "text",
                             "text": " 近10年高雄市全般刑案發生數呈下降趨勢……",
-                            "margin": "md"
+                            "margin": "md",
+                            "size": "sm"
                         },
                         {
                             "type": "button",
@@ -378,7 +388,9 @@ def sendTextFlexImage(event):
                             "label": "了解更多",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=147C187738435E92"
                             },
-                            "height": "sm"
+                            "height": "sm",
+                            "color": "#B0AEFF",
+                            "offsetTop": "md"
                         }
                         ]
                     },
