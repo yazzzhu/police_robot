@@ -50,7 +50,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -83,7 +83,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=599332A021320E12"
                             },
                             "height": "sm",
@@ -111,7 +110,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -144,7 +143,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=A13A4E2BA960766E"
                             },
                             "height": "sm",
@@ -173,7 +171,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -206,7 +204,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=51FE6A2309B2325C"
                             },
                             "height": "sm",
@@ -234,7 +231,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -267,7 +264,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=639D3F27CB77DE1B"
                             },
                             "height": "sm",
@@ -296,7 +292,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -329,7 +325,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=0D7095AB0D8EC979"
                             },
                             "height": "sm",
@@ -357,7 +352,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "60px"
                     },
                     "body": {
                         "type": "box",
@@ -390,7 +385,6 @@ def sendTextFlexImage(event):
                             "action": {
                             "type": "uri",
                             "label": "了解更多",
-                            "size":"xs",
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=147C187738435E92"
                             },
                             "height": "sm",
