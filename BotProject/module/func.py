@@ -286,7 +286,7 @@ def sendTextFlexImage(event):
                         "contents": [
                         {
                             "type": "text",
-                            "text": "落實推動性別平等，營造友善職場：近10年女性警察官占比逐年提升！",
+                            "text": "落實推動性別平等，營造友善職場",
                             "color": "#ffffff",
                             "weight": "bold",
                             "align": "center"
@@ -347,7 +347,7 @@ def sendTextFlexImage(event):
                         "contents": [
                         {
                             "type": "text",
-                            "text": "民眾生命安全之守護神：近10年治安數據呈「發生數下降、破獲率增加。」持續進步趨勢",
+                            "text": "民眾生命安全之守護神",
                             "color": "#ffffff",
                             "weight": "bold"
                         }
