@@ -47,11 +47,10 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "行人路權優先，保障你我安全",
                             "color": "#ffffff",
-                            "weight": "bold",
-                            "align": "center"
+                            "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
@@ -111,7 +110,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
@@ -172,7 +171,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
@@ -232,7 +231,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
@@ -293,7 +292,7 @@ def sendTextFlexImage(event):
                             "align": "center"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
@@ -353,7 +352,7 @@ def sendTextFlexImage(event):
                             "weight": "bold"
                         }
                         ],
-                        "height": "55px"
+                        "height": "50px"
                     },
                     "body": {
                         "type": "box",
