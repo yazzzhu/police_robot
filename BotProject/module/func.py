@@ -48,8 +48,7 @@ def sendTextFlexImage(event):
                             "text": "行人路權優先，保障你我安全",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -75,7 +74,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "近5年高雄市行人交通事故件數，由108年……",
+                            "text": "近5年高雄市行人交通事故件數，由108年1,823件逐年降低至112年……",
                             "margin": "lg",
                             "wrap": True
                         },
@@ -109,8 +108,7 @@ def sendTextFlexImage(event):
                             "text": "攜手反暴力 愛擁抱不擁暴",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -136,7 +134,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "為防治家庭暴力行為與保護被害人權益，透過……",
+                            "text": "為防治家庭暴力行為與保護被害人權益，透過社政、警政、教育……",
                             "margin": "lg",
                             "wrap": True
                         },
@@ -170,8 +168,7 @@ def sendTextFlexImage(event):
                             "text": "詐欺花招多，小心謹慎看緊辛苦錢！",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -197,7 +194,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺……",
+                            "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺案件被害人……",
                             "margin": "lg",
                             "wrap": True
                         },
@@ -231,8 +228,7 @@ def sendTextFlexImage(event):
                             "text": "尋獲失蹤人口撫平家屬擔憂",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -258,7 +254,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "近5年高雄市每年失蹤人口發生數約介於……",
+                            "text": "近5年高雄市每年失蹤人口發生數約介於2,550至2,650人間，其中……",
                             "margin": "lg",
                             "wrap": True
                         },
@@ -292,8 +288,7 @@ def sendTextFlexImage(event):
                             "text": "落實推動性別平等，營造友善職場：近10年女性警察官占比逐年提升！",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -319,7 +314,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "在性別平等工作持續推動下，近10年高雄市……",
+                            "text": "在性別平等工作持續推動下，近10年高雄市女性警察官數由103年底……",
                             "margin": "lg",
                             "wrap": True
                         },
@@ -353,8 +348,7 @@ def sendTextFlexImage(event):
                             "text": "民眾生命安全之守護神：近10年治安數據呈「發生數下降、破獲率增加。」持續進步趨勢",
                             "color": "#ffffff",
                             "weight": "bold",
-                            "size": "lg",
-                            "wrap": True
+                            "size": "lg"
                         }
                         ]
                     },
@@ -380,7 +374,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": " 近10年高雄市全般刑案發生數呈下降趨勢……",
+                            "text": " 近10年高雄市全般刑案發生數呈下降趨勢，由103年33,884件下降……",
                             "margin": "lg",
                             "wrap": True
                         },
