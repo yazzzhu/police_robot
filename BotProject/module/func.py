@@ -3,6 +3,8 @@ from django.conf import settings
 from linebot import LineBotApi
 from linebot.models import TextSendMessage,ImageSendMessage,StickerSendMessage,LocationSendMessage,QuickReply,QuickReplyButton,MessageAction
 #放入處理回覆訊息所需的模組
+from linebot.models import TemplateSendMessage,ButtonsTemplate,MessageTemplateAction,URITemplateAction,PostbackTemplateAction
+#放入處理按鈕樣板所需的模組
 from linebot.models import FlexSendMessage
 #放入處理flex message所需的模組
 
@@ -19,10 +21,62 @@ def sendText1(event):
             event.reply_token,TextSendMessage(text='ERROR!')
         )
 
-def sendText2(event):
+def sendButton(event):
+    try:
+        message = TemplateSendMessage(
+            alt_text = '警政統計問答',
+            template = ButtonsTemplate(
+                thumbnail_image_url='https://i.imgur.com/pRdaAmS.jpg',
+                title='警政統計問答',
+                text='有什麼想問的呢?',
+                actions=[
+                    MessageTemplateAction(
+                        label='問題1',
+                        text='問題1'
+                    ),
+                    MessageTemplateAction(
+                        label='問題2',
+                        text='問題2'
+                    ),
+                    MessageTemplateAction(
+                        label='問題3',
+                        text='問題3'
+                    ),
+                ]
+            )
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )
+
+def send001(event):
     try:
         message = TextSendMessage(
-            text='2222',
+            text = '回答1',
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )
+
+def send002(event):
+    try:
+        message = TextSendMessage(
+            text = '回答2',
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )
+
+def send003(event):
+    try:
+        message = TextSendMessage(
+            text = '回答3',
         )
         line_bot_api.reply_message(event.reply_token,message)
     except:

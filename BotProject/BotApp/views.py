@@ -38,10 +38,19 @@ def callback(request):
                     if mtext == '主題一':
                         func.sendText1(event)
     
-                    elif mtext == '主題二':
-                        func.sendText2(event)
+                    elif mtext == '警政統計問答':
+                        func.sendButton(event)
     
-                    elif mtext == '警政統計主題圖卡':
+                    elif mtext == '問題1':
+                        func.send001(event)
+    
+                    elif mtext == '問題2':
+                        func.send002(event)
+
+                    elif mtext == '問題3':
+                        func.send002(event)
+
+                    elif mtext == '統計主題圖卡':
                         func.sendTextFlexImage(event)
 
         return HttpResponse()
