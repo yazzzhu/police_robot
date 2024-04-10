@@ -26,7 +26,7 @@ def sendButton(event):
         message = TemplateSendMessage(
             alt_text = '警政統計問答',
             template = ButtonsTemplate(
-                thumbnail_image_url='https://i.imgur.com/pRdaAmS.jpg',
+                thumbnail_image_url='https://github.com/yazzzhu/police_robot/blob/master/image/_68530905-5c56-4575-9518-6bbad8f7610e0.png?raw=true',
                 title='警政統計問答',
                 text='有什麼想問的呢?',
                 actions=[
