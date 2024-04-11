@@ -16,22 +16,38 @@ def sendQAButton(event):
             alt_text = "警政統計問答Q&A",
             contents={
                 "type": "bubble",
-                "header": {
+                "hero": {
                     "type": "box",
                     "layout": "vertical",
                     "contents": [
                     {
-                        "type": "text",
-                        "text": "警政統計問答",
-                        "color": "#7878FF",
-                        "size": "xl",
-                        "weight": "bold"
-                    },
-                    {
-                        "type": "text",
-                        "text": "有什麼想問的呢?",
-                        "size": "sm",
-                        "color": "#808080"
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                        {
+                            "type": "image",
+                            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                            "size": "full",
+                            "aspectRatio": "3:2",
+                            "aspectMode": "cover"
+                        },
+                        {
+                            "type": "text",
+                            "text": "警政統計問答",
+                            "color": "#7878FF",
+                            "size": "xl",
+                            "weight": "bold",
+                            "offsetStart": "lg",
+                            "margin": "md"
+                        },
+                        {
+                            "type": "text",
+                            "text": "有什麼想問的呢?",
+                            "size": "sm",
+                            "color": "#808080",
+                            "offsetStart": "lg"
+                        }
+                        ]
                     }
                     ]
                 },
