@@ -68,7 +68,7 @@ def sendTextFlexImage(event):
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=599332A021320E12"
                             },
                             "height": "sm",
-                            "color": "#7878FF",
+                            "color": "#B0AEFF",
                             "offsetTop": "md"
                         }
                         ]
@@ -130,7 +130,7 @@ def sendTextFlexImage(event):
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=A13A4E2BA960766E"
                             },
                             "height": "sm",
-                            "color": "#B0AEFF",
+                            "color": "#7878FF",
                             "offsetTop": "md"
                         }
                         ]
@@ -193,7 +193,7 @@ def sendTextFlexImage(event):
                             },
                             "height": "sm",
                             "offsetTop": "md",
-                            "color": "#7878FF"
+                            "color": "#B0AEFF"
                         }
                         ]
                     },
@@ -254,7 +254,7 @@ def sendTextFlexImage(event):
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=639D3F27CB77DE1B"
                             },
                             "height": "sm",
-                            "color": "#B0AEFF",
+                            "color": "#7878FF",
                             "offsetTop": "md"
                         }
                         ]
@@ -316,7 +316,7 @@ def sendTextFlexImage(event):
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=0D7095AB0D8EC979"
                             },
                             "height": "sm",
-                            "color": "#7878FF",
+                            "color": "#B0AEFF",
                             "offsetTop": "md"
                         }
                         ]
@@ -378,7 +378,7 @@ def sendTextFlexImage(event):
                             "uri": "https://kcpd.kcg.gov.tw/News_Content.aspx?n=EF52D09631BD16DF&sms=891486F7A6BFF569&s=147C187738435E92"
                             },
                             "height": "sm",
-                            "color": "#B0AEFF",
+                            "color": "#7878FF",
                             "offsetTop": "md"
                         }
                         ]
@@ -390,7 +390,7 @@ def sendTextFlexImage(event):
                     }
                     }
                 ]
-                } 
+                }
         )
         line_bot_api.reply_message(event.reply_token,message)
     except:
