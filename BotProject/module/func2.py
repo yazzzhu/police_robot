@@ -74,7 +74,7 @@ def sendQAButton(event):
                         "text": "Q002"
                         },
                         "height": "sm",
-                        "color": "#B0AEFF",
+                        "color": "#7878FF",
                         "margin": "xs",
                         "style": "primary"
                     },
@@ -84,6 +84,30 @@ def sendQAButton(event):
                         "type": "message",
                         "label": "問題3",
                         "text": "Q003"
+                        },
+                        "height": "sm",
+                        "color": "#B0AEFF",
+                        "style": "primary",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "button",
+                        "action": {
+                        "type": "message",
+                        "label": "問題4",
+                        "text": "Q004"
+                        },
+                        "height": "sm",
+                        "color": "#7878FF",
+                        "margin": "xs",
+                        "style": "primary"
+                    },
+                    {
+                        "type": "button",
+                        "action": {
+                        "type": "message",
+                        "label": "問題5",
+                        "text": "Q005"
                         },
                         "height": "sm",
                         "color": "#B0AEFF",
@@ -133,3 +157,24 @@ def send003(event):
             event.reply_token,TextSendMessage(text='ERROR!')
         )
 
+def send004(event):
+    try:
+        message = TextSendMessage(
+            text = 'A004',
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )
+
+def send005(event):
+    try:
+        message = TextSendMessage(
+            text = 'A005',
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )

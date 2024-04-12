@@ -50,6 +50,12 @@ def callback(request):
                     elif mtext == 'Q003':
                         func2.send003(event)
 
+                    elif mtext == 'Q004':
+                        func2.send003(event)
+
+                    elif mtext == 'Q005':
+                        func2.send003(event)
+
                     elif mtext == '統計主題圖卡':
                         func3.sendTextFlexImage(event)
 
