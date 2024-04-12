@@ -57,7 +57,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "近5年高雄市行人交通事故件數，由108年1,823件逐年降低至112年……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 1
                         },
                         {
@@ -119,7 +119,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "為防治家庭暴力行為與保護被害人權益，透過社政、警政、教育……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 2
                         },
                         {
@@ -181,7 +181,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺案件被害人……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 2
                         },
                         {
@@ -243,7 +243,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "近5年高雄市每年失蹤人口發生數約介於2,550至2,650人間，其中……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 2
                         },
                         {
@@ -305,7 +305,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": "在性別平等工作持續推動下，近10年高雄市女性警察官數由103年底……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 2
                         },
                         {
@@ -367,7 +367,7 @@ def sendTextFlexImage(event):
                             "type": "text",
                             "text": " 近10年高雄市全般刑案發生數呈下降趨勢，由103年33,884件下降……",
                             "margin": "lg",
-                            "wrap": true,
+                            "wrap": True,
                             "flex": 2
                         },
                         {
