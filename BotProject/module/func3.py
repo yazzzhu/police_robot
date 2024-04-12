@@ -58,7 +58,7 @@ def sendTextFlexImage(event):
                             "text": "近5年高雄市行人交通事故件數，由108年1,823件逐年降低至112年……",
                             "margin": "lg",
                             "wrap": True,
-                            "flex": 1
+                            "flex": 2
                         },
                         {
                             "type": "button",
