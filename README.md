@@ -39,9 +39,9 @@ Messaging API > LINE Official Account features > Auto-reply messages > `Edit`
 cd 到要建立專案的資料夾下
 
     #建立虛擬環境(進行套件安裝更改就不會影響本機原來的開發環境)
-    pip install virtualenv
-    virtualenv venv (虛擬環境名稱)
-    .\venv\Scripts\activate
+    $pip install virtualenv
+    $virtualenv venv (虛擬環境名稱)
+    $.\venv\Scripts\activate
     #啟動虛擬環境(在Windows系統下)，正確啟動後前面會有(venv)
     #退出虛擬環境deactivate
 
@@ -53,17 +53,17 @@ cd 到要建立專案的資料夾下
 
 另外要執行(建立套件清單)#我是建在專案外
 
-    cd ..
-    pip freeze > requirements.txt
+    $cd ..
+    $pip freeze > requirements.txt
 
 #在要建立專案的資料夾下
 
-    django-admin startproject BotProject(專案名稱)
+    $django-admin startproject BotProject(專案名稱)
 
 啟動本地端伺服器
 
-    cd BotProject(專案名稱)
-    python manage.py runserver
+    $cd BotProject(專案名稱)
+    $python manage.py runserver
 
 出現`Starting development server at http://127.0.0.1:8000/` 複製 http://127.0.0.1:8000/ 這段於瀏覽器開啟
 
@@ -82,15 +82,15 @@ cd 到要建立專案的資料夾下
 
 **建立Django APP**
 
-    cd 到建立專案的資料夾下
-    python manage.py startapp BotApp(APP名稱)
+    $cd 到建立專案的資料夾下
+    $python manage.py startapp BotApp(APP名稱)
 
 新增兩個資料夾
 (static主要用於靜態資料如圖片、圖示、其他媒體檔案等等)
 (templates則是用於放模版，也就是寫好的html的網頁)
 
-    md templates
-    md static
+    $md templates
+    $md static
 
 **更改settings.py**
 
@@ -112,7 +112,7 @@ cd 到要建立專案的資料夾下
 
 > 編輯.gitignore(沒有.gitignore檔，就自己建)
 
-    touch .gitignore
+    $touch .gitignore
 
 > .gitignore
 
@@ -121,9 +121,9 @@ cd 到要建立專案的資料夾下
 
 > 安裝套件
 
-    pip install python-dotenv
+    $pip install python-dotenv
 
-> (如需更新套件清單pip freeze > requirements.txt)
+> (如需更新套件清單$pip freeze > requirements.txt)
 
 > settings.py 加入
 
@@ -208,7 +208,7 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 
 #測試Django App開發
 
-    python manage.py runserver
+    $python manage.py runserver
     
 <div align=center>
  
@@ -223,12 +223,12 @@ DEBUG = True為預設除錯模式，執行時會輸出錯誤訊息方便除錯�
 
 **Django Migration(資料遷移) 資料庫遷移的初始化**
 
-    python manage.py makemigrations
-    python manage.py migrate
+    $python manage.py makemigrations
+    $python manage.py migrate
 
 **建立一個管理者帳號**
 
-    python manage.py createsuperuser
+    $python manage.py createsuperuser
 
 <br>
 
@@ -395,55 +395,55 @@ Edit Webhook URL : `https:~(複製的連結)/callback`
 
 到Git Bish或vscode的Git Bish
 
-    git --version #確認版本
+    $git --version #確認版本
 
 設定使用者(若已有 GitHub 帳號，建議和 GitHub 使用相同的)
 
-    git config --global user.name "<Your Name>"
-    git config --global user.email "<your@gmail.com>"
+    $git config --global user.name "<Your Name>"
+    $git config --global user.email "<your@gmail.com>"
 
-    git config --list   #檢視 git 設定
+    $git config --list   #檢視 git 設定
 
 <br>
 
 **(上傳github流程)**
 
-    cd 到建立專案的資料夾下
-    git init #初始化Git Repository(建立.git之隱藏檔案)
-    git status #觀察Repository檔案追蹤狀況
-    git add '檔名' #將檔案加入追蹤清單，如: git add .(add全)
+    $cd 到建立專案的資料夾下
+    $git init #初始化Git Repository(建立.git之隱藏檔案)
+    $git status #觀察Repository檔案追蹤狀況
+    $git add '檔名' #將檔案加入追蹤清單，如: git add .(add全)
     
-再一次 `git status` 就會列出新增清單
+再一次 `$git status` 就會列出新增清單
 
-    git commit -m "此處填版本訊息" #建一組版本更新訊息
+    $git commit -m "此處填版本訊息" #建一組版本更新訊息
     
-再一次 `git status` 可以發現訊息已經被清空，後續可以在github上看到
+再一次 `$git status` 可以發現訊息已經被清空，後續可以在github上看到
 
-    git push origin master
+    $git push origin master
 
 <br>
 
 **連接到遠端**
 
-    git remote add origin(遠端空間名稱) https:~(遠端地址)
+    $git remote add origin(遠端空間名稱) https:~(遠端地址)
 
 * 有error: remote origin already exists. #已存在之錯誤:
-    * 先刪除 git remote rm origin
-    * 後增加 git remote add origin git@github.com:~.git
+    * 先刪除 $git remote rm origin
+    * 後增加 $git remote add origin git@github.com:~.git
 
 <br>
 
-    git remote -v #查詢遠端的repository
-    git branch -M main
+    $git remote -v #查詢遠端的repository
+    $git branch -M main
 
 `(有error: failed to push some refs to '~.git'錯誤: git pull --rebase origin master)`
 
-    git push (-u) origin(遠端空間名稱) master(遠端空間的分支名稱)
+    $git push (-u) origin(遠端空間名稱) master(遠端空間的分支名稱)
     [Hint] "-u"會把預設的remote設成origin, 未來push若不指定remote,則都會推到origin
 
 登入授權就連接成功
 
-    git push(先前設定origin為預設，連接之後可以直接push)
+    $git push(先前設定origin為預設，連接之後可以直接push)
 
 <br>
 
