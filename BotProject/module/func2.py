@@ -26,10 +26,10 @@ def sendQAButton(event):
                         "contents": [
                         {
                             "type": "image",
-                            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                            "aspectRatio": "4:3",
+                            "aspectMode": "cover",
                             "size": "full",
-                            "aspectRatio": "3:2",
-                            "aspectMode": "cover"
+                            "url": "https://github.com/yazzzhu/police_robot/blob/master/image/lineQA%E5%9C%96.png?raw=true"
                         },
                         {
                             "type": "text",
