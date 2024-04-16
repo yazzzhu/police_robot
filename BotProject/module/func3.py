@@ -179,7 +179,7 @@ def sendTextFlexImage(event):
                         },
                         {
                             "type": "text",
-                            "text": "112年高雄市詐欺案件占全般刑案11.83%，詐欺案件被害人……",
+                            "text": "112年高雄市詐欺案件占全般刑案11.81%，詐欺案件被害人……",
                             "margin": "lg",
                             "wrap": True,
                             "flex": 2
