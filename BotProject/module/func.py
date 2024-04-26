@@ -20,3 +20,14 @@ def sendText1(event):
         line_bot_api.reply_message(
             event.reply_token,TextSendMessage(text='ERROR!')
         )
+
+def sendText2(event):
+    try:
+        message = TextSendMessage(
+            text='2222',
+        )
+        line_bot_api.reply_message(event.reply_token,message)
+    except:
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(text='ERROR!')
+        )

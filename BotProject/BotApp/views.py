@@ -37,6 +37,9 @@ def callback(request):
                     mtext = event.message.text
                     if mtext == '主題一':
                         func.sendText1(event)
+                    
+                    if mtext == '主題二':
+                        func.sendText2(event)
     
                     elif mtext == '警政統計問答':
                         func2.sendQAButton(event)
