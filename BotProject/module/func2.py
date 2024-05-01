@@ -29,7 +29,7 @@ def sendQAButton(event):
                             "aspectRatio": "4:3",
                             "aspectMode": "cover",
                             "size": "full",
-                            "url": "https://github.com/yazzzhu/police_robot/blob/master/image/line_QA%E5%9C%96.png?raw=true"
+                            "url": "https://github.com/yazzzhu/police_robot/blob/master/image/line_QA%E5%9C%96_QA_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?raw=true"
                         },
                         {
                             "type": "text",
