@@ -5,7 +5,7 @@ sched = BlockingScheduler()
 
 # 防止睡眠
 def DoNotSleep():
-    url = "https://police-robot.onrender.com/callback"
+    url = "https://github.com/yazzzhu/police_robot"
     r = requests.get(url)
 
 # 防止自動休眠
