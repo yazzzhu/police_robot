@@ -9,4 +9,4 @@ def DoNotSleep():
     r = requests.get(url)
 
 # 防止自動休眠
-sched.add_job(DoNotSleep, trigger='interval', id='doNotSleeps_job', day_of_week='mon-fri', minute='*/20')
+sched.add_job(DoNotSleep, trigger='interval', id='doNotSleeps_job', day_of_week='mon-fri', minute='*/15')
