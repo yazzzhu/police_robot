@@ -21,33 +21,27 @@ def sendQAButton(event):
                     "layout": "vertical",
                     "contents": [
                     {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                        {
-                            "type": "image",
-                            "aspectRatio": "4:3",
-                            "aspectMode": "cover",
-                            "size": "full",
-                            "url": "https://github.com/yazzzhu/police_robot/blob/master/image/line_QA%E5%9C%96_QA_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?raw=true"
-                        },
-                        {
-                            "type": "text",
-                            "text": "警政統計問答",
-                            "color": "#B09FFF",
-                            "size": "xl",
-                            "weight": "bold",
-                            "offsetStart": "lg",
-                            "margin": "md"
-                        },
-                        {
-                            "type": "text",
-                            "text": "有什麼想問的呢?",
-                            "size": "sm",
-                            "color": "#808080",
-                            "offsetStart": "lg"
-                        }
-                        ]
+                        "type": "image",
+                        "aspectRatio": "4:3",
+                        "aspectMode": "cover",
+                        "size": "full",
+                        "url": "https://github.com/yazzzhu/police_robot/blob/master/image/line_QA%E5%9C%96_QA_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?raw=true"
+                    },
+                    {
+                        "type": "text",
+                        "text": "警政統計問答",
+                        "color": "#B09FFF",
+                        "size": "xl",
+                        "weight": "bold",
+                        "offsetStart": "lg",
+                        "margin": "md"
+                    },
+                    {
+                        "type": "text",
+                        "text": "有什麼想問的呢?",
+                        "size": "sm",
+                        "color": "#808080",
+                        "offsetStart": "lg"
                     }
                     ]
                 },
@@ -59,7 +53,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "① 關於 主題1 ０１２３４５６７",
+                        "label": "① 關於 主題1 ０１２３４５６７８",
                         "text": "Q001"
                         },
                         "color": "#8589c0",
@@ -124,7 +118,11 @@ def sendQAButton(event):
                     }
                     ],
                     "alignItems": "flex-start",
-                    "position": "relative"
+                    "position": "relative",
+                    "paddingTop": "md",
+                    "paddingBottom": "md",
+                    "paddingStart": "lg",
+                    "paddingEnd": "lg"
                 }
                 }
         )
