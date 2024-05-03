@@ -63,7 +63,8 @@ def sendQAButton(event):
                         "text": "Q001"
                         },
                         "color": "#8589c0",
-                        "style": "link"
+                        "style": "link",
+                        "height": "sm"
                     },
                     {
                         "type": "separator"
@@ -76,7 +77,8 @@ def sendQAButton(event):
                         "text": "Q002"
                         },
                         "color": "#8589c0",
-                        "style": "link"
+                        "style": "link",
+                        "height": "sm"
                     },
                     {
                         "type": "separator"
@@ -89,7 +91,8 @@ def sendQAButton(event):
                         "text": "Q003"
                         },
                         "color": "#8589c0",
-                        "style": "link"
+                        "style": "link",
+                        "height": "sm"
                     },
                     {
                         "type": "separator"
@@ -102,7 +105,8 @@ def sendQAButton(event):
                         "text": "Q004"
                         },
                         "color": "#8589c0",
-                        "style": "link"
+                        "style": "link",
+                        "height": "sm"
                     },
                     {
                         "type": "separator"
@@ -115,11 +119,12 @@ def sendQAButton(event):
                         "text": "Q005"
                         },
                         "color": "#8589c0",
-                        "style": "link"
+                        "style": "link",
+                        "height": "sm"
                     }
                     ],
                     "alignItems": "flex-start",
-                    "offsetBottom": "md"
+                    "offsetBottom": "lg"
                 }
                 }
         )
