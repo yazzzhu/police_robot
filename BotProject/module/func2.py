@@ -124,7 +124,7 @@ def sendQAButton(event):
                     }
                     ],
                     "alignItems": "flex-start",
-                    "offsetBottom": "lg"
+                    "position": "relative"
                 }
                 }
         )
