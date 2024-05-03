@@ -53,7 +53,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "① 關於 主題1 ０１２３４５６７８",
+                        "label": "❶ 關於 主題1 ０１２３４５６７８",
                         "text": "Q001"
                         },
                         "color": "#8589c0",
@@ -63,7 +63,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "② 關於 主題2",
+                        "label": "❷ 關於 主題2",
                         "text": "Q002"
                         },
                         "color": "#8589c0",
@@ -73,7 +73,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "③ 關於 主題3",
+                        "label": "❸ 關於 主題3",
                         "text": "Q003"
                         },
                         "color": "#8589c0",
@@ -83,7 +83,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "④ 關於 主題4",
+                        "label": "❹ 關於 主題4",
                         "text": "Q004"
                         },
                         "color": "#8589c0",
@@ -93,7 +93,7 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "⑤ 關於 主題5",
+                        "label": "❺ 關於 主題5",
                         "text": "Q005"
                         },
                         "color": "#8589c0",
@@ -102,10 +102,8 @@ def sendQAButton(event):
                     ],
                     "alignItems": "flex-start",
                     "position": "relative",
-                    "paddingTop": "sm",
-                    "paddingBottom": "lg",
-                    "paddingStart": "xl",
-                    "paddingEnd": "xl"
+                    "paddingAll": "md",
+                    "paddingTop": "xs"
                 }
                 }
         )
