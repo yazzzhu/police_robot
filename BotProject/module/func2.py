@@ -34,7 +34,7 @@ def sendQAButton(event):
                         {
                             "type": "text",
                             "text": "警政統計問答",
-                            "color": "#7878FF",
+                            "color": "#B09FFF",
                             "size": "xl",
                             "weight": "bold",
                             "offsetStart": "lg",
@@ -59,62 +59,67 @@ def sendQAButton(event):
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "問題1",
+                        "label": "① 關於 主題1 ０１２３４５６７",
                         "text": "Q001"
                         },
-                        "height": "sm",
-                        "color": "#B0AEFF",
-                        "style": "primary"
+                        "color": "#8589c0",
+                        "style": "link"
+                    },
+                    {
+                        "type": "separator"
                     },
                     {
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "問題2",
+                        "label": "② 關於 主題2",
                         "text": "Q002"
                         },
-                        "height": "sm",
-                        "color": "#7878FF",
-                        "margin": "xs",
-                        "style": "primary"
+                        "color": "#8589c0",
+                        "style": "link"
+                    },
+                    {
+                        "type": "separator"
                     },
                     {
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "問題3",
+                        "label": "③ 關於 主題3",
                         "text": "Q003"
                         },
-                        "height": "sm",
-                        "color": "#B0AEFF",
-                        "style": "primary",
-                        "margin": "xs"
+                        "color": "#8589c0",
+                        "style": "link"
+                    },
+                    {
+                        "type": "separator"
                     },
                     {
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "問題4",
+                        "label": "④ 關於 主題4",
                         "text": "Q004"
                         },
-                        "height": "sm",
-                        "color": "#7878FF",
-                        "margin": "xs",
-                        "style": "primary"
+                        "color": "#8589c0",
+                        "style": "link"
+                    },
+                    {
+                        "type": "separator"
                     },
                     {
                         "type": "button",
                         "action": {
                         "type": "message",
-                        "label": "問題5",
+                        "label": "⑤ 關於 主題5",
                         "text": "Q005"
                         },
-                        "height": "sm",
-                        "color": "#B0AEFF",
-                        "style": "primary",
-                        "margin": "xs"
+                        "color": "#8589c0",
+                        "style": "link"
                     }
-                    ]
+                    ],
+                    "alignItems": "flex-start",
+                    "offsetBottom": "md"
                 }
                 }
         )
