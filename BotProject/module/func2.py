@@ -57,11 +57,7 @@ def sendQAButton(event):
                         "text": "Q001"
                         },
                         "color": "#8589c0",
-                        "style": "link",
-                        "height": "sm"
-                    },
-                    {
-                        "type": "separator"
+                        "style": "link"
                     },
                     {
                         "type": "button",
@@ -71,11 +67,7 @@ def sendQAButton(event):
                         "text": "Q002"
                         },
                         "color": "#8589c0",
-                        "style": "link",
-                        "height": "sm"
-                    },
-                    {
-                        "type": "separator"
+                        "style": "link"
                     },
                     {
                         "type": "button",
@@ -85,11 +77,7 @@ def sendQAButton(event):
                         "text": "Q003"
                         },
                         "color": "#8589c0",
-                        "style": "link",
-                        "height": "sm"
-                    },
-                    {
-                        "type": "separator"
+                        "style": "link"
                     },
                     {
                         "type": "button",
@@ -99,11 +87,7 @@ def sendQAButton(event):
                         "text": "Q004"
                         },
                         "color": "#8589c0",
-                        "style": "link",
-                        "height": "sm"
-                    },
-                    {
-                        "type": "separator"
+                        "style": "link"
                     },
                     {
                         "type": "button",
@@ -113,16 +97,15 @@ def sendQAButton(event):
                         "text": "Q005"
                         },
                         "color": "#8589c0",
-                        "style": "link",
-                        "height": "sm"
+                        "style": "link"
                     }
                     ],
                     "alignItems": "flex-start",
                     "position": "relative",
-                    "paddingTop": "md",
-                    "paddingBottom": "md",
-                    "paddingStart": "lg",
-                    "paddingEnd": "lg"
+                    "paddingTop": "sm",
+                    "paddingBottom": "lg",
+                    "paddingStart": "xl",
+                    "paddingEnd": "xl"
                 }
                 }
         )
